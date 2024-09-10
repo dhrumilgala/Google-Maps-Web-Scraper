@@ -1,12 +1,12 @@
-GOOGLE MAPS BUSINESS SCRAPER
+****GOOGLE MAPS BUSINESS SCRAPER****
 
 
-OVERVIEW:
+**OVERVIEW**:
 
 This Python script automates the process of searching for businesses on Google Maps, extracting key details such as the business name, address, website, phone number, and geographic coordinates, and saving the data into structured files (Excel and CSV). The script is designed to be flexible and can handle multiple search terms provided via command-line arguments or a text file.
 
 
-FEATURES:
+**FEATURES**:
 
 Automated Data Extraction: Extracts business details like name, address, website, phone number, and coordinates directly from Google Maps.
 Flexible Search Options: Accepts search terms via command-line arguments or an input text file.
@@ -16,7 +16,7 @@ Headless Mode: Supports running the browser in headless mode for faster executio
 Save Location: Customize the output directory where files are saved.
 
 
-REQUIREMENTS:
+**REQUIREMENTS**:
 
 Python 3.7+
 Google Chrome browser
@@ -27,7 +27,7 @@ pandas
 webdriver_manager
 
 
-INSTALLATION AND SETUP:
+**INSTALLATION AND SETUP**:
 
 cd google_web_scraper
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 Note: The script uses webdriver_manager to automatically handle ChromeDriver installation. Ensure that you have the Chrome browser installed.
 
 
-USAGE:
+**USAGE**:
 
 python main.py -s "Coffee Shops in San Francisco" -t 5
 
@@ -50,7 +50,7 @@ Alternatively, you can provide search terms in a text file named input.txt, with
 python main.py
 
 
-OUTPUT:
+**OUTPUT**:
 
 The script will save the extracted data into Excel and CSV files in the output directory. The filenames are based on the search term, with spaces replaced by underscores. For example:
 
@@ -58,7 +58,7 @@ google_maps_data_Coffee_Shops_in_San_Francisco.xlsx
 google_maps_data_Coffee_Shops_in_San_Francisco.csv
 
 
-HEADLESS MODE:
+**HEADLESS MODE**:
 
 If you want to run the script in headless mode (i.e., without opening a visible browser window), you can enable this by modifying the headless option in the script:
 
